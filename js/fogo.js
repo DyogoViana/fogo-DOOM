@@ -1,31 +1,50 @@
 // fogo.js
 
 
-const arrayFogo = []
-const larguraFogo = 2
-const alturaFogo = 3
+const firePixelsArray = []
+const fireWidth = 2
+const fireHeight = 3
 
-function iniciar () {
-    baseFogo ()
-    console.log (arrayFogo)
+function start () {
+    createFireDataStructure()
+    rederFite()
 }
 
 
 
-function baseFogo () {
-    const numeroPixels = alturaFogo * larguraFogo
+function createFireDataStructure () {
+    const numberOfPixels = fireHeight * fireWidth
 
-    for (let i = 0; i < numeroPixels; i++) {
-        arrayFogo [i] = 0
+    for (let i = 0; i < numberOfPixels; i++) {
+        firePixelsArray [i] = 0
     }
 }
 
-function propagacaoFogo () {
+function calculateFirePropagation () {
 
 }
 
-function rederizarFogo () {
+function rederFite () {
+    let html = "<table cellpadding=0 cellspacing=0>"
 
+    // Para cada pixel de ALTURA, é criado um table row <tr> (row).
+    for (let row = 0; row < fireHeight; row++) { 
+        html += "<tr>"
+
+        // Para cada pixel de LARGURA, é criado um table data <td> (columm).
+        for (let columm = 0; columm < fireWidth; columm++) {
+            const pixelIndex = columm + (fireWidth * row)
+
+            html += "<td>"
+            html += pixelIndex
+            html += "</td>"
+        }
+
+        html += "</tr>"
+    }
+    html += "</table>"
+
+    document.querySelector ("#canvasFogo").innerHTML = html
 }
 
-iniciar ()
+start ()
