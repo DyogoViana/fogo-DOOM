@@ -17,6 +17,13 @@ td {
     position: relative;
 }
 
+/* pixelar os blocos */
+td.pixel {
+    width: 4px;
+    height: 4px;
+    border: 0;
+}
+
 .pixel-index {
     font-size: 1rem;
     display: inline-block;
