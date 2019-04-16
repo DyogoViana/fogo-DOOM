@@ -55,7 +55,7 @@ function updateFireIntensityPerPixel (currentPixelIndex) {
     }
 
     // Declinio, desconto da intensidade do fogo.
-    const decay = 1
+    const decay = Math.floor (Math.random() * 3) // Preencher de forma aleatória o fogo.
     const belowPixelFireIntensity = firePixelsArray [belowPixelIndex]
     // Se a intensidade de baixo menos o desconto for >= a 0, atribui o valor da variável. Se não for, deixa igual a zero
     const newFireIntensity = belowPixelFireIntensity - decay >= 0 ? belowPixelFireIntensity - decay : 0
