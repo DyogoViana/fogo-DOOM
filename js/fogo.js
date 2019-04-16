@@ -76,16 +76,17 @@ function renderFire () {
         for (let columm = 0; columm < fireWidth; columm++) {
             const pixelIndex = columm + (fireWidth * row)
             const fireIntensity = firePixelsArray [pixelIndex]
+            const color = fireColorsPalette [fireIntensity]
+            const colorString = `${color.r}, ${color.g}, ${color.b}`
 
             if (debug === true) {
                 html += "<td>"
-                html += `<div class="pixel-index"> ${pixelIndex} </div>`;
-                html += fireIntensity
+                html += `<div class="pixel-index"> ${pixelIndex} </div>`
+                // html += fireIntensity // APAGAR DEPOIS
+                html += `<div style= "color: rgb(${colorString})"> ${fireIntensity}</div>`
                 html += "</td>"
             } else {
-                const color = fireColorsPalette [fireIntensity]
-                const colorString = `${color.r}, ${color.g}, ${color.b}`
-                html += `<td style="background-color: rgb (${colorString})">`
+                html += `<td class="pixel" style="background-color: rgb(${colorString})">`
                 html += "</td>"
             }
         }
