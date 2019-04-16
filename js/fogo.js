@@ -2,8 +2,8 @@
 
 
 const firePixelsArray = []
-const fireWidth = 2
-const fireHeight = 3
+const fireWidth = 10
+const fireHeight = 10
 
 function start () {
     createFireDataStructure()
@@ -36,7 +36,7 @@ function rederFite () {
             const pixelIndex = columm + (fireWidth * row)
 
             html += "<td>"
-            html += pixelIndex
+            html += `<div class="pixel-index"> ${pixelIndex} </div>`;
             html += "</td>"
         }
 
