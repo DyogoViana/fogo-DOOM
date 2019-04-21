@@ -1,2 +1,1 @@
-![Doom-mockup--github](https://user-images.githubusercontent.com/16628382/56465060-a5f0a300-63cc-11e9-81aa-c79340c8557c.jpg)
-![Doom--Fogo](https://user-images.githubusercontent.com/16628382/56465248-63c96080-63d0-11e9-9ee2-83f80b6af3af.gif)
+![Doom-mockup--github(cortado)](https://user-images.githubusercontent.com/16628382/56473942-f9a0d200-6448-11e9-9bb4-1c0ca09ea6ae.jpg)![Doom--Fogo](https://user-images.githubusercontent.com/16628382/56475410-43e07e00-645e-11e9-8511-cb1908f39df2.gif)
